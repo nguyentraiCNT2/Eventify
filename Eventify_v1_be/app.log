@@ -1,0 +1,712 @@
+2024-12-13T01:51:02.491+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 19024 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T01:51:02.496+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T01:51:02.580+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T01:51:02.581+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T01:51:04.136+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T01:51:04.506+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 344 ms. Found 1 JPA repository interface.
+2024-12-13T01:51:05.166+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T01:51:05.262+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T01:51:05.787+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T01:51:05.810+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T01:51:05.811+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T01:51:05.904+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T01:51:05.904+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3322 ms
+2024-12-13T01:51:06.246+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T01:51:06.355+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T01:51:06.407+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T01:51:06.843+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T01:51:06.886+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T01:51:07.186+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14464676
+2024-12-13T01:51:07.189+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T01:51:07.247+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T01:51:07.253+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T01:51:07.280+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T01:51:08.971+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T01:51:11.716+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:51:12.106+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T01:51:12.787+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T01:51:13.003+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T01:51:13.342+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T01:51:13.498+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T01:51:13.962+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T01:51:14.117+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T01:51:14.127+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 12.543 seconds (process running for 14.452)
+2024-12-13T01:51:22.543+07:00  INFO 19024 --- [Eventify_v1_be] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 54 class path changes (0 additions, 53 deletions, 1 modification)
+2024-12-13T01:51:22.548+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T01:51:22.569+07:00  INFO 19024 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T01:51:22.607+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:51:22.613+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T01:51:22.628+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T01:51:22.889+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 19024 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T01:51:22.890+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T01:51:23.524+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T01:51:23.528+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-12-13T01:51:23.892+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T01:51:23.897+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T01:51:24.041+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T01:51:24.043+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T01:51:24.043+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T01:51:24.143+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T01:51:24.144+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1247 ms
+2024-12-13T01:51:24.278+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T01:51:24.289+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T01:51:24.316+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T01:51:24.319+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-13T01:51:24.331+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6059949e
+2024-12-13T01:51:24.332+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-13T01:51:24.334+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T01:51:24.336+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T01:51:24.337+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T01:51:24.381+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T01:51:24.382+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:51:24.507+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T01:51:24.802+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T01:51:25.182+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 428c6e8b-c978-4327-aaf1-735380834057
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-13T01:51:25.200+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-13T01:51:25.369+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T01:51:25.402+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T01:51:25.415+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 2.627 seconds (process running for 25.739)
+2024-12-13T01:51:25.428+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.ObjectPostProcessor; SearchStrategy: all) found beans 'objectPostProcessor', 'webAuthorizationManagerPostProcessor', 'filterChainDecoratorPostProcessor', 'authenticationManagerPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#viewNameTranslator matched:
+      - @ConditionalOnMissingBean (names: viewNameTranslator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-12-13T01:51:28.076+07:00  INFO 19024 --- [Eventify_v1_be] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 53 class path changes (53 additions, 0 deletions, 0 modifications)
+2024-12-13T01:51:28.079+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T01:51:28.099+07:00  INFO 19024 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T01:51:28.104+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:51:28.105+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-12-13T01:51:28.109+07:00  INFO 19024 --- [Eventify_v1_be] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-12-13T01:51:28.323+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 19024 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T01:51:28.323+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T01:51:28.847+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T01:51:28.877+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2024-12-13T01:51:29.082+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T01:51:29.091+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T01:51:29.233+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T01:51:29.234+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T01:51:29.235+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T01:51:29.326+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T01:51:29.326+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 996 ms
+2024-12-13T01:51:29.502+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T01:51:29.511+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T01:51:29.565+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T01:51:29.569+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-12-13T01:51:29.576+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@759a1c58
+2024-12-13T01:51:29.577+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-12-13T01:51:29.579+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T01:51:29.580+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T01:51:29.580+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T01:51:30.705+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T01:51:31.579+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:51:31.691+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T01:51:31.798+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T01:51:31.902+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T01:51:32.015+07:00  WARN 19024 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T01:51:32.298+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T01:51:32.333+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T01:51:32.339+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 4.089 seconds (process running for 32.663)
+2024-12-13T01:51:32.342+07:00  INFO 19024 --- [Eventify_v1_be] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' customUserDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport' org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-12-13T01:51:52.101+07:00  INFO 19024 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T01:51:52.116+07:00  INFO 19024 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T01:51:52.120+07:00  INFO 19024 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:51:52.121+07:00  INFO 19024 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-12-13T01:51:52.123+07:00  INFO 19024 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-12-13T01:51:56.041+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 15728 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T01:51:56.044+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T01:51:56.103+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T01:51:56.103+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T01:51:57.107+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T01:51:57.303+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185 ms. Found 1 JPA repository interface.
+2024-12-13T01:51:57.770+07:00  WARN 15728 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T01:51:57.851+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T01:51:58.322+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T01:51:58.347+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T01:51:58.348+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T01:51:58.421+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T01:51:58.422+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2319 ms
+2024-12-13T01:51:58.655+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T01:51:58.762+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T01:51:58.815+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T01:51:59.220+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T01:51:59.268+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T01:51:59.502+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@230da558
+2024-12-13T01:51:59.504+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T01:51:59.564+07:00  WARN 15728 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T01:51:59.570+07:00  WARN 15728 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T01:51:59.591+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T01:52:01.111+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T01:52:01.542+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:52:01.914+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T01:52:02.642+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T01:52:02.953+07:00  WARN 15728 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T01:52:03.226+07:00  WARN 15728 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T01:52:03.412+07:00  WARN 15728 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T01:52:03.895+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T01:52:04.004+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T01:52:04.013+07:00  INFO 15728 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 8.898 seconds (process running for 10.053)
+2024-12-13T01:54:12.810+07:00  INFO 15728 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T01:54:12.828+07:00  INFO 15728 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T01:54:12.849+07:00  INFO 15728 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:54:12.859+07:00  INFO 15728 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T01:54:12.872+07:00  INFO 15728 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T01:54:15.916+07:00 ERROR 4596 --- [Eventify_v1_be] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.zaxxer.hikari' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.zaxxer.hikari
+    Value: "DEBUG # For HikariCP connection pool debugging"
+    Origin: class path resource [application.properties] - 37:33
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG # For HikariCP connection pool debugging)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2024-12-13T01:54:35.818+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 18488 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T01:54:35.821+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T01:54:35.879+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T01:54:35.879+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T01:54:36.751+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T01:54:36.900+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interface.
+2024-12-13T01:54:37.357+07:00  WARN 18488 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T01:54:37.390+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T01:54:37.724+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T01:54:37.738+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T01:54:37.739+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T01:54:37.798+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T01:54:37.799+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1919 ms
+2024-12-13T01:54:38.001+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T01:54:38.063+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T01:54:38.106+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T01:54:38.414+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T01:54:38.445+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T01:54:38.645+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f473f1
+2024-12-13T01:54:38.647+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T01:54:38.687+07:00  WARN 18488 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T01:54:38.691+07:00  WARN 18488 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T01:54:38.707+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T01:54:40.051+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T01:54:40.479+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:54:40.729+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T01:54:41.203+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T01:54:41.416+07:00  WARN 18488 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T01:54:41.638+07:00  WARN 18488 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T01:54:41.795+07:00  WARN 18488 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T01:54:42.228+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T01:54:42.326+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T01:54:42.334+07:00  INFO 18488 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 7.038 seconds (process running for 7.997)
+2024-12-13T01:54:49.260+07:00  INFO 18488 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T01:54:49.276+07:00  INFO 18488 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T01:54:49.294+07:00  INFO 18488 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T01:54:49.297+07:00  INFO 18488 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T01:54:49.304+07:00  INFO 18488 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:05:46.559+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 19324 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:05:46.561+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:05:46.611+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:05:46.612+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:05:47.710+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:05:47.979+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 254 ms. Found 1 JPA repository interface.
+2024-12-13T02:05:48.511+07:00  WARN 19324 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:05:48.597+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:05:49.042+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:05:49.057+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:05:49.057+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:05:49.142+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:05:49.143+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2531 ms
+2024-12-13T02:05:49.420+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:05:49.523+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:05:49.573+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:05:49.984+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:05:50.023+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:05:50.315+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e25de4
+2024-12-13T02:05:50.319+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:05:50.369+07:00  WARN 19324 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:05:50.373+07:00  WARN 19324 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:05:50.395+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:05:51.915+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:05:52.356+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:05:52.740+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:05:53.302+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:05:53.527+07:00  WARN 19324 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:05:53.821+07:00  WARN 19324 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:05:54.000+07:00  WARN 19324 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:05:54.486+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:05:54.614+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:05:54.623+07:00  INFO 19324 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 8.648 seconds (process running for 9.836)
+2024-12-13T02:07:30.725+07:00  INFO 19324 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:07:30.752+07:00  INFO 19324 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:07:30.807+07:00  INFO 19324 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:07:30.816+07:00  INFO 19324 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:07:30.836+07:00  INFO 19324 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:07:36.997+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 13772 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:07:37.001+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:07:37.101+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:07:37.102+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:07:38.948+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:07:39.443+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 477 ms. Found 1 JPA repository interface.
+2024-12-13T02:07:40.425+07:00  WARN 13772 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:07:40.581+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:07:41.393+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:07:41.430+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:07:41.431+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:07:41.570+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:07:41.571+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4468 ms
+2024-12-13T02:07:42.048+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:07:42.234+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:07:42.348+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:07:43.004+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:07:43.055+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:07:43.546+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a101ef2
+2024-12-13T02:07:43.551+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:07:43.645+07:00  WARN 13772 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:07:43.656+07:00  WARN 13772 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:07:43.698+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:07:46.412+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:07:47.059+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:07:47.582+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:07:48.588+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:07:48.997+07:00  WARN 13772 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:07:49.486+07:00  WARN 13772 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:07:49.732+07:00  WARN 13772 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:07:50.537+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:07:50.725+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:07:50.747+07:00  INFO 13772 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 14.701 seconds (process running for 17.17)
+2024-12-13T02:09:20.095+07:00  INFO 13772 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:09:20.112+07:00  INFO 13772 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:09:20.143+07:00  INFO 13772 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:09:20.149+07:00  INFO 13772 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:09:20.161+07:00  INFO 13772 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:10:18.010+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 11668 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:10:18.013+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:10:18.063+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:10:18.063+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:10:19.003+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:10:19.214+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 1 JPA repository interface.
+2024-12-13T02:10:19.677+07:00  WARN 11668 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:10:19.712+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:10:20.060+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:10:20.075+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:10:20.076+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:10:20.152+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:10:20.154+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2089 ms
+2024-12-13T02:10:20.362+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:10:20.420+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:10:20.457+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:10:20.725+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:10:20.757+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:10:20.969+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7349734d
+2024-12-13T02:10:20.971+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:10:21.013+07:00  WARN 11668 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:10:21.017+07:00  WARN 11668 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:10:21.034+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:10:22.303+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:10:22.763+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:10:23.026+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:10:23.506+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:10:23.699+07:00  WARN 11668 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:10:23.936+07:00  WARN 11668 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:10:24.086+07:00  WARN 11668 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:10:24.513+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:10:24.604+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:10:24.614+07:00  INFO 11668 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 7.095 seconds (process running for 8.227)
+2024-12-13T02:14:22.358+07:00  INFO 11668 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:14:22.375+07:00  INFO 11668 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:14:22.411+07:00  INFO 11668 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:14:22.416+07:00  INFO 11668 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:14:22.444+07:00  INFO 11668 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:15:14.265+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 9820 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:15:14.270+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:15:14.352+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:15:14.353+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:15:15.657+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:15:15.838+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+2024-12-13T02:15:16.423+07:00  WARN 9820 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:15:16.509+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:15:16.930+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:15:16.945+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:15:16.946+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:15:17.016+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:15:17.016+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2662 ms
+2024-12-13T02:15:17.288+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:15:17.374+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:15:17.420+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:15:17.755+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:15:17.796+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:15:18.010+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48a1c819
+2024-12-13T02:15:18.012+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:15:18.069+07:00  WARN 9820 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:15:18.078+07:00  WARN 9820 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:15:18.123+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:15:19.599+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:15:20.004+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:15:20.475+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:15:21.105+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:15:21.405+07:00  WARN 9820 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:15:21.742+07:00  WARN 9820 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:15:21.919+07:00  WARN 9820 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:15:22.444+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:15:22.565+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:15:22.576+07:00  INFO 9820 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 9.304 seconds (process running for 10.828)
+2024-12-13T02:16:28.380+07:00  INFO 9820 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T02:16:28.381+07:00  INFO 9820 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T02:16:28.382+07:00  INFO 9820 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-13T02:16:47.148+07:00  INFO 9820 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:16:47.164+07:00  INFO 9820 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:16:47.186+07:00  INFO 9820 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:16:47.190+07:00  INFO 9820 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:16:47.198+07:00  INFO 9820 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:17:08.681+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 4124 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:17:08.683+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:17:08.736+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:17:08.736+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:17:09.645+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:17:09.805+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
+2024-12-13T02:17:10.238+07:00  WARN 4124 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:17:10.278+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:17:10.616+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:17:10.630+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:17:10.630+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:17:10.689+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:17:10.689+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1952 ms
+2024-12-13T02:17:10.894+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:17:10.956+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:17:10.995+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:17:11.336+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:17:11.367+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:17:11.563+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48e1252d
+2024-12-13T02:17:11.564+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:17:11.611+07:00  WARN 4124 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:17:11.615+07:00  WARN 4124 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:17:11.631+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:17:12.902+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:17:13.351+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:17:13.589+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:17:14.025+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:17:14.246+07:00  WARN 4124 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:17:14.468+07:00  WARN 4124 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:17:14.618+07:00  WARN 4124 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:17:14.981+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:17:15.068+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:17:15.080+07:00  INFO 4124 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 6.949 seconds (process running for 7.968)
+2024-12-13T02:17:19.923+07:00  INFO 4124 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T02:17:19.923+07:00  INFO 4124 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T02:17:19.925+07:00  INFO 4124 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-13T02:18:07.042+07:00  INFO 4124 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:18:07.059+07:00  INFO 4124 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:18:07.078+07:00  INFO 4124 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:18:07.084+07:00  INFO 4124 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:18:07.093+07:00  INFO 4124 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:19:09.762+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 18624 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:19:09.765+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:19:09.861+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:19:09.862+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:19:10.800+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:19:10.953+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 1 JPA repository interface.
+2024-12-13T02:19:11.442+07:00  WARN 18624 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:19:11.481+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:19:12.083+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:19:12.103+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:19:12.104+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:19:12.176+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:19:12.176+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2314 ms
+2024-12-13T02:19:12.432+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:19:12.495+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:19:12.530+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:19:12.810+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:19:12.839+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:19:13.044+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18cde278
+2024-12-13T02:19:13.055+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:19:13.109+07:00  WARN 18624 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:19:13.114+07:00  WARN 18624 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:19:13.141+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:19:14.422+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:19:14.808+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:19:15.078+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:19:15.577+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:19:15.787+07:00  WARN 18624 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:19:16.038+07:00  WARN 18624 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:19:16.246+07:00  WARN 18624 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:19:16.784+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:19:16.889+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:19:16.898+07:00  INFO 18624 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 7.66 seconds (process running for 8.592)
+2024-12-13T02:19:23.221+07:00  INFO 18624 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T02:19:23.221+07:00  INFO 18624 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T02:19:23.226+07:00  INFO 18624 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-13T02:20:19.668+07:00  INFO 18624 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:20:19.685+07:00  INFO 18624 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:20:19.703+07:00  INFO 18624 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:20:19.707+07:00  INFO 18624 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:20:19.713+07:00  INFO 18624 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-13T02:20:48.935+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Starting EventifyV1BeApplication using Java 21.0.2 with PID 15776 (D:\NCKH\Eventify_v1_be\target\classes started by ninhn in D:\NCKH\Eventify_v1_be)
+2024-12-13T02:20:48.937+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T02:20:49.009+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13T02:20:49.009+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13T02:20:49.939+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T02:20:50.094+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2024-12-13T02:20:50.540+07:00  WARN 15776 --- [Eventify_v1_be] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-13T02:20:50.586+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-13T02:20:51.068+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-13T02:20:51.086+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-13T02:20:51.087+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-13T02:20:51.159+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-13T02:20:51.159+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2149 ms
+2024-12-13T02:20:51.406+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T02:20:51.463+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T02:20:51.497+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T02:20:51.774+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T02:20:51.805+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T02:20:52.001+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39449c0d
+2024-12-13T02:20:52.003+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T02:20:52.051+07:00  WARN 15776 --- [Eventify_v1_be] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-13T02:20:52.055+07:00  WARN 15776 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-13T02:20:52.075+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-13T02:20:53.342+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T02:20:53.747+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:20:54.016+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T02:20:54.508+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static final long com.nckh.ninhngoctuan.eventify_v1_be.Configuration.Security.JwtAuthenticationEntryPoint.serialVersionUID
+2024-12-13T02:20:54.706+07:00  WARN 15776 --- [Eventify_v1_be] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T02:20:54.947+07:00  WARN 15776 --- [Eventify_v1_be] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-13T02:20:55.136+07:00  WARN 15776 --- [Eventify_v1_be] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-13T02:20:55.621+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-13T02:20:55.725+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ui/v1'
+2024-12-13T02:20:55.732+07:00  INFO 15776 --- [Eventify_v1_be] [restartedMain] c.n.n.e.EventifyV1BeApplication          : Started EventifyV1BeApplication in 7.302 seconds (process running for 8.294)
+2024-12-13T02:21:07.276+07:00  INFO 15776 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/ui/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-13T02:21:07.277+07:00  INFO 15776 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-13T02:21:07.279+07:00  INFO 15776 --- [Eventify_v1_be] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-13T02:23:10.208+07:00  INFO 15776 --- [Eventify_v1_be] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-13T02:23:10.224+07:00  INFO 15776 --- [Eventify_v1_be] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-13T02:23:10.255+07:00  INFO 15776 --- [Eventify_v1_be] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T02:23:10.259+07:00  INFO 15776 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-13T02:23:10.268+07:00  INFO 15776 --- [Eventify_v1_be] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
